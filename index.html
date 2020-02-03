@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Webathon</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+	<!--Header-->
+	<header>
+      <div class="container">
+        <div class="header-left">
+          <img
+            class="logo"
+            src="logo.png"
+          />
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <a href="#courses">COURSES</a>
+          <a href="#team">OUR TEAM</a>
+          <a href="#toplearner-wrapper">TOP LEARNERS</a>
+          <a href="#" class="signup">SIGN UP</a>
+        </div>
+      </div>
+    </header>
+    <!-- Top -->
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>Want to learn coding <br>for <b>FREE?</b></h1>
+        <h2><br><br><br><br>THIS IS WHERE YOUR SEARCH ENDS!!</h2>
+      </div>
+    </div>
+    <!-- Sign up modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times">×</i>
+        </div>
+        <div id="signup-form">
+          <h2>Sign up with email</h2>
+          <form action="/sign.php">
+            <input class="form-control" type="text" placeholder="Email" />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Password"
+            />
+            <div id="submit-btn">Sign up</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Message -->
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>YOU ARE IN GOOD COMPANY</h2><br>
+          <h3>Over <b>35,000,000</b> learners all over the world use our apps on all types of devices.</h3>
+        </div>
+        <span class="btn message"><a href="startlearning.html">Start Learning</a></span>
+      </div>
+    </div>
+     <!-- Lesson -->
+    <div class="lesson-wrapper" id="courses">
+      <div class="container">
+        <div class="heading">
+          <h2>I design and develop experiences that make people's life <b>simple.</b></h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/html.png" />
+              <p>HTML & CSS</p>
+            </div>
+            <p class="text-contents">
+              Languages used to build and design the appearances of your
+              websites. HTML adds the structure, and CSS styles it.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/jQuery.png" />
+              <p>jQuery</p>
+            </div>
+            <p class="text-contents">
+              A fast, feature-rich and easy-to-use JavaScript library that
+              handles animations and Ajax requests.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/ruby.png" />
+              <p>Ruby</p>
+            </div>
+            <p class="text-contents">
+              A dynamic, general-purpose language that is simple and productive.
+              It is commonly used around the world to build web applications.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/php.png" />
+              <p>PHP</p>
+            </div>
+            <p class="text-contents">
+              An open source scripting language that can be embedded into HTML,
+              and well suited for web development.
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+        
+      <!-- Slideshow container -->
+<div class="slideshow-container" id="team">
+	<div class="ourteam">
+		<h1>OUR TEAM</h1>
+	</div>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="pp.jpg" style="width:25%">
+    <div class="text">Shikhar Gupta</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="MatWatson.jpg" style="width:25%">
+    <div class="text">Mat Watson</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="NevileRuas.jpg" style="width:25%">
+    <div class="text">Nevile Ruas</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+     <!-- Top Learners -->
+    <div class="toplearner-wrapper" id="toplearner-wrapper">
+      <div class="container">
+        <div class="toplearners">
+        	<h2><br>TOP LEARNERS <center></h2>
+          <div class="toplearner">
+            <div class="toplearner-icon">
+              <img src="MatWatson.jpg" />
+              <p>Mat Watson</p>
+            </div>
+            <p class="text-contents"><br>
+              Probably the best way to use my phone. This is a revolutionary way to learn code. The comments on each question/section adds a real world perspective.
+            </p>
+          </div>
+          <div class="toplearner">
+            <div class="toplearner-icon">
+              <img src="NevileRuas.jpg" />
+              <p>Nevile Ruas</p>
+            </div>
+            <p class="text-contents"><br>
+              Wow... I mean... WOW! Boys and girls, just go for it... I mean, it's just so simple, so pretty and well organized. I've been looking for free, self learning tools all over for all kinds of stuff and this is by far, the best one. Just too good! And by the way, the community is there, always, to help.
+            </p>
+          </div>
+          <div class="toplearner">
+            <div class="toplearner-icon">
+              <img src="OdjerOnline.jpg" />
+              <p>Odjer Online</p>
+            </div>
+            <p class="text-contents"><br>
+              Appreciations! Superb application with step-by-step teaching. You are making a lot of impacts especially in Ghana, Africa. I couldn't afford the university to learn to code. Thanks so much. Keep it up.
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<footer class="footer">
+		<img src="logo.png">
+		<h5>&copy 2020 VCode. All rights reserved.</h5></div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="slide.js"></script>
+</footer>
+</html>

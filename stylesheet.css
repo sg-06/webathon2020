@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "GothamRounded";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.top-wrapper {
+  padding: 150px 0 30px 30px;
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.top-wrapper h1 {
+  font-size: 55px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.top-wrapper h2 {
+  font-size: 55px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #0520EC ;
+  text-align: center;
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+}
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Modal  */
+/* Modal is not visible by default. Modal become visible by changing the display property */
+.signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  color: #8491a5;
+  background-color: #ccd9ea;
+  transition: 0.3s ease-in-out;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color: black;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #ff0000;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 30px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.toplearner-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #FFC433 ;
+  text-align: center;
+}
+.toplearner {
+  float: left;
+  width: 33%;
+}
+
+.toplearner-icon {
+  padding-top: 40px;
+}
+
+.toplearner-icon img{
+  border-radius: 35%;
+  width: 100px;
+  height: 100px;
+}
+
+.toplearner-icon p {
+  position: absolute;
+  color: black;
+  padding-top: 0px;
+  padding-left: 140px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.ourteam h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Hide the images by default */
+.mySlides{
+  display: none;
+  padding-left: 425px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: orange;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  padding-left: 18px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+
+footer h5{
+text-align: left;
+}
+
+/*.........startlearning.html..........*/
+.course-content{
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+align-items: center;
+}
+.course-content h1{
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+}
+.course-content h3{
+  text-align: center;
+  font-weight: bold;
+  color: #000066;
+}
+
+.course-content img{
+  border-radius: 50%;
+  height: 150px;
+  padding-left: 10px;
+}
+.course-content h2{
+  text-align: center;
+  display: inline-block;
+  color: red;
+  height: 50px;
+}
+.course-content p{
+  text-align: center;
+}
+.html{
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  border-radius: 25px;
+}
+.css{
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  float: right;
+  border-radius: 25px;
+}
+.jquery{
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  border-radius: 25px;
+}
+.js{
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  float: right;
+  border-radius: 25px;
+}
+.python{
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  border-radius: 25px;
+}
+.c{
+  position: relative;
+  border: 2px solid black;
+  width: 50%;
+  padding-top: 20px;
+  float: right;
+  border-radius: 25px;
+}
